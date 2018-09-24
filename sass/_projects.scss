@@ -1,0 +1,56 @@
+.projects {
+    background-image: linear-gradient(to right bottom,
+        rgba($red-start, 0.6),
+        rgba($yellow-start, 0.6)),
+        url(../img/waterfall.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+
+
+
+    margin-top: -35%;
+    padding-top: 32%;
+    padding-bottom: 40rem;
+    min-height: 60rem;
+    position: relative;
+    z-index: 15;
+
+    &__part {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+        justify-items: center;
+
+    }
+
+    &-item {
+
+        &__img {
+
+            width: 35rem;
+            height: 35rem;
+            border-radius: 100%/100%;
+        }
+    }
+
+    &__bubbles {
+        text-align: center;
+    }
+
+    h2 {
+        
+        margin-bottom: 5rem;
+    }
+    
+    h4 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    @media only screen and (max-width: 750px) {
+        padding-bottom: 30rem;
+        margin-top: -30rem;
+        padding-top: 30rem;
+    }
+}

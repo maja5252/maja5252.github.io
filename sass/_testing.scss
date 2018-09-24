@@ -1,0 +1,104 @@
+.testing {
+    background-image: linear-gradient(to left bottom,
+        rgba($yellow-start, 0.6),
+        rgba($green-end, 0.6)),
+        url(../img/globe.jpg);
+    background-size: cover;
+    background-position: center;
+
+    padding: 20rem 15rem 0 15rem;
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+    margin-top: -35rem;
+    position: relative;
+    z-index: 25;
+
+    display: grid;
+    grid-template-columns: min-content repeat(2, 1fr);
+    grid-template-rows: 20% 40% 20% 20%;
+    grid-column-gap: 3.5rem;
+    grid-row-gap: 1.5rem;
+
+    &__h2 {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        align-self: end;
+        text-align: center;
+        
+        h2 {
+            font-size: 4rem;
+        }
+        
+        @media only screen and (max-width: 750px) {
+        align-self: center;
+    }
+    }
+
+    &__sites {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        
+        p {
+            font-size: 1.8rem;
+        }
+        
+        ul > li {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__abilities {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        
+        ul > li {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__img {
+        grid-row: 1 / 4;
+        grid-column: 1 / 2;
+        align-self: center;
+
+        img {
+            width: 50rem;
+
+            @media only screen and (max-width: 1100px) {
+                width: 25rem;
+            }
+        }
+    }
+
+    &__p {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+        align-items: start;
+    }
+
+    &__crowdtester {
+        grid-row: 3 / 5;
+        grid-column: 2 / span 2;
+
+        img {
+            height: 10rem;
+
+            @media only screen and (max-width: 1100px) {
+                height: 5rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -30rem;
+        padding: 15rem 0 0 0;
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+        
+        ul > li {
+            list-style-type: none;
+        }
+    }
+
+}

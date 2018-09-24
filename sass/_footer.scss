@@ -1,0 +1,31 @@
+.footer {
+    display: none !important;
+    background-color: $color-black;
+    color: $color-white;
+
+    display: grid;
+    grid-template-columns: 25rem 1fr 20rem;
+
+    &__contact-details {
+        margin-top: 1rem;
+    }
+
+
+    &__techs {
+        text-align: center;
+    }
+
+    &__rights {
+        text-align: center;
+        line-height: 700%;
+    }
+
+}
+
+.ln {
+    margin: 10px;
+    width: 6rem;
+    height: 8rem;
+    background-color: #3095d3;
+    float: left;
+}

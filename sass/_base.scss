@@ -1,0 +1,87 @@
+//COLOR VARIABLES
+$color-gray: #777;
+$color-white: #fff;
+$color-black: #000;
+
+//GRADIENT COLORS
+$red-start: rgba(244, 75, 66, 0.8);
+$red-end: rgba(234, 96, 32, 0.8);
+
+$yellow-start: rgba(244, 240, 0, 0.6);
+$yellow-end: rgba(255, 170, 0, 0.6);
+
+$green-start: rgba(160, 255, 45, 0.6);
+$green-end: rgba(7, 79, 0, 0.6);
+
+//FONT VARIABLES
+$font-primary: 'Lato',
+sans-serif;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media only screen and (max-width: 1300px) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-black;
+    font-weight: 300;
+    line-height: 1.6;
+    background-color: $color-gray;
+
+}
+
+.container {}
+
+.btn {
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: $color-white;
+        color: $color-gray;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        text-align: center;
+        margin-right: 5rem;
+    }
+
+    &--big {
+    font-size: 1.5rem;
+        padding: 2rem 4rem;
+    }
+
+    &--small {
+        min-width: 4rem;
+        min-height: 2.5rem;
+    }
+
+    &--med {
+        min-width: 10rem;
+        min-height: 6rem;
+        padding-top: 1.7rem;
+    }
+}
+
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}

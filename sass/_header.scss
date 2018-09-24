@@ -1,0 +1,26 @@
+.header {
+    font-size: 1vh;
+    color: $color-white;
+    
+    min-height: 100vh;
+    background-image: url(../img/sky.jpg);
+    background-size: cover;
+    padding: 5vh;
+
+    display: grid;
+    grid-template-rows: 1fr min-content max-content;
+    grid-gap: 5vh;
+
+    h1 {
+        align-self: end;
+    }
+    
+}
+
+
+.choose {
+    text-align: center;
+}
+
+
+
