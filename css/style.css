@@ -78,16 +78,23 @@ body {
   display: inline-block;
   border-radius: 100px;
   transition: all .2s;
-  text-align: center;
-  margin-right: 5rem; }
+  text-align: center; }
 
 .btn--big {
   font-size: 1.5rem;
-  padding: 2rem 4rem; }
+  padding: 3rem 4rem;
+  width: 30rem;
+  margin-right: 5rem; }
+  @media only screen and (max-width: 700px) {
+    .btn--big {
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      margin-right: .5rem; } }
 
 .btn--small {
   min-width: 4rem;
-  min-height: 2.5rem; }
+  min-height: 2.5rem;
+  margin-right: 1rem; }
 
 .btn--med {
   min-width: 10rem;
@@ -101,16 +108,25 @@ body {
   transform: translateY(-1px); }
 
 .h1 {
-  font-size: 10vw;
+  font-size: 8vw;
   text-align: center; }
+  @media only screen and (max-width: 700px) {
+    .h1 {
+      font-size: 8vh; } }
 
 .h2 {
   text-align: center;
   font-size: 4rem; }
 
-.h4 {
+.h3 {
   font-size: 2.5vh;
   text-align: justify; }
+  @media only screen and (max-width: 700px) {
+    .h3 {
+      font-size: 2vh; } }
+
+.h4 {
+  font-size: 1.4rem; }
 
 p {
   font-size: 1.6rem;
@@ -122,10 +138,10 @@ p {
   min-height: 100vh;
   background-image: url(../img/sky.jpg);
   background-size: cover;
-  padding: 5vh;
+  padding: 5vw;
   display: grid;
   grid-template-rows: 1fr min-content max-content;
-  grid-gap: 5vh; }
+  grid-gap: 5vw; }
   .header h1 {
     align-self: end; }
 
@@ -199,7 +215,9 @@ p {
     height: 35rem;
     border-radius: 100%/100%; }
   .projects__bubbles {
-    text-align: center; }
+    padding-top: 1rem;
+    text-align: center;
+    padding-bottom: 1rem; }
   .projects h2 {
     margin-bottom: 5rem; }
   .projects h4 {
@@ -237,16 +255,22 @@ p {
         align-self: center; } }
   .testing__sites {
     grid-column: 2 / 3;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    justify-self: center; }
     .testing__sites p {
       font-size: 1.8rem; }
-    .testing__sites ul > li {
-      font-size: 1.5rem; }
+    .testing__sites ul {
+      list-style-type: none; }
+      .testing__sites ul li {
+        font-size: 1.5rem; }
   .testing__abilities {
     grid-column: 3 / 4;
-    grid-row: 2 / 3; }
-    .testing__abilities ul > li {
-      font-size: 1.5rem; }
+    grid-row: 2 / 3;
+    justify-self: center; }
+    .testing__abilities ul {
+      list-style-type: none; }
+      .testing__abilities ul li {
+        font-size: 1.5rem; }
   .testing__img {
     grid-row: 1 / 4;
     grid-column: 1 / 2;
@@ -260,6 +284,9 @@ p {
     grid-row: 4 / 5;
     grid-column: 1 / 2;
     align-items: start; }
+    .testing__p p {
+      color: black;
+      font-weight: 700; }
   .testing__crowdtester {
     grid-row: 3 / 5;
     grid-column: 2 / span 2; }

@@ -1,6 +1,10 @@
 .h1 {
-    font-size: 10vw;
+    font-size: 8vw;
     text-align: center;
+    
+    @media only screen and (max-width: 700px) {
+                font-size: 8vh;
+            }
 }
 
 .h2 {
@@ -8,11 +12,17 @@
     font-size: 4rem;
 }
 
-.h3 {}
-
-.h4 {
+.h3 {
     font-size: 2.5vh;
     text-align: justify;
+    
+    @media only screen and (max-width: 700px) {
+                font-size: 2vh;
+            }
+}
+
+.h4 {
+    font-size: 1.4rem;
 }
 
 p {

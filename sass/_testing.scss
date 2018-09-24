@@ -36,22 +36,30 @@
     &__sites {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        justify-self: center;
         
         p {
             font-size: 1.8rem;
         }
         
-        ul > li {
-            font-size: 1.5rem;
+        ul {
+            list-style-type: none;
+            li {
+                font-size: 1.5rem;
+            }
         }
     }
 
     &__abilities {
         grid-column: 3 / 4;
         grid-row: 2 / 3;
+        justify-self: center;
         
-        ul > li {
-            font-size: 1.5rem;
+        ul {
+            list-style-type: none;
+            li {
+                font-size: 1.5rem;
+            }
         }
     }
 
@@ -73,11 +81,19 @@
         grid-row: 4 / 5;
         grid-column: 1 / 2;
         align-items: start;
+        
+        p {
+           color: black; 
+            font-weight: 700;
+            
+        }
+        
     }
 
     &__crowdtester {
         grid-row: 3 / 5;
         grid-column: 2 / span 2;
+        
 
         img {
             height: 10rem;
