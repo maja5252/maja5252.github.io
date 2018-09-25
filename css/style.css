@@ -250,7 +250,7 @@ p {
     text-align: center; }
     .testing__h2 h2 {
       font-size: 4rem; }
-    @media only screen and (max-width: 750px) {
+    @media only screen and (max-width: 838px) {
       .testing__h2 {
         align-self: center; } }
   .testing__sites {
@@ -279,7 +279,7 @@ p {
       width: 50rem; }
       @media only screen and (max-width: 1100px) {
         .testing__img img {
-          width: 25rem; } }
+          width: 35rem; } }
   .testing__p {
     grid-row: 4 / 5;
     grid-column: 1 / 2;
@@ -295,7 +295,7 @@ p {
       @media only screen and (max-width: 1100px) {
         .testing__crowdtester img {
           height: 5rem; } }
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 838px) {
     .testing {
       display: flex;
       flex-direction: column;
@@ -307,22 +307,42 @@ p {
         list-style-type: none; } }
 
 .footer {
-  display: none !important;
   background-color: #000;
   color: #fff;
   display: grid;
-  grid-template-columns: 25rem 1fr 20rem; }
+  grid-template-columns: 25rem 1fr 25rem;
+  padding: 2rem; }
   .footer__contact-details {
-    margin-top: 1rem; }
-  .footer__techs {
-    text-align: center; }
+    margin-top: 2rem; }
   .footer__rights {
     text-align: center;
-    line-height: 700%; }
+    align-self: center;
+    padding-top: 1rem; }
+    @media only screen and (max-width: 645px) {
+      .footer__rights {
+        grid-row: 2 / -1;
+        grid-column: 1 / -1; } }
+  .footer__techs {
+    text-align: center; }
+    @media only screen and (max-width: 460px) {
+      .footer__techs p {
+        font-size: 1.4rem; } }
+    .footer__techs img {
+      height: 8rem;
+      width: 8rem; }
+    @media only screen and (max-width: 645px) {
+      .footer__techs {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4; } }
+  @media only screen and (max-width: 645px) {
+    .footer {
+      grid-template-columns: 20rem 1fr max-content;
+      grid-template-rows: 10rem 1fr; } }
 
 .ln {
-  margin: 10px;
-  width: 6rem;
-  height: 8rem;
+  border-radius: 100px;
+  margin: 1.5rem;
+  width: 7rem;
+  height: 7rem;
   background-color: #3095d3;
   float: left; }
