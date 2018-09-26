@@ -160,6 +160,8 @@ p {
   font-size: 2.2rem;
   color: #fff;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%); }
+  .skills h2 {
+    margin-bottom: 10rem; }
   .skills__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -168,29 +170,38 @@ p {
     @media only screen and (max-width: 703px) {
       .skills__container {
         justify-items: center; } }
-  .skills h2 {
-    margin-bottom: 10rem; }
-  .skills__box {
+  .skills__box h3 {
+    line-height: 200%;
+    text-align: center; }
+  .skills__item {
     height: 40rem;
     width: 30rem;
-    position: relative; }
-    .skills__box img {
+    position: relative;
+    border-radius: 10px; }
+    .skills__item img {
       width: 40%;
       margin-left: 30%;
       position: absolute;
       top: -6rem; }
-    .skills__box h3 {
+    .skills__item i {
       position: absolute;
-      bottom: -6rem;
-      text-align: center; }
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .skills__item p {
+      text-transform: uppercase;
+      font-size: 3.2rem;
+      position: absolute;
+      top: 65%;
+      left: 18%; }
   .skills__css {
-    background-image: url(../img/code-css.png); }
+    background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.3), rgba(0, 128, 0, 0.3)), url(../img/code-css.png); }
   .skills__scss {
     background-image: url(../img/code-scss.png); }
   .skills__js {
-    background-image: url(../img/code-js.png); }
+    background-color: gray; }
   .skills__bootstrap {
-    background-image: url(../img/code-js.png); }
+    background-color: gray; }
   @media only screen and (max-width: 750px) {
     .skills {
       padding: 0 5rem 25rem 5rem;
