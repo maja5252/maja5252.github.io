@@ -6,9 +6,27 @@
     grid-template-columns: 25rem 1fr 25rem;
     padding: 2rem;
 
-
+    &__contact {
+        display: flex;
+        
+        a:link, a:visited {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    
     &__contact-details {
         margin-top: 2rem;
+        display: inline-block;
+        height: 6rem;
+        background-color: white;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 600%;
+        
+        p {
+            color: black;
+        }
     }
 
     &__rights {
@@ -59,4 +77,6 @@
     height: 7rem;
     background-color: #3095d3;
     float: left;
+    text-align: center;
+    line-height: 900%;
 }

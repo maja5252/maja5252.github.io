@@ -323,8 +323,21 @@ p {
   display: grid;
   grid-template-columns: 25rem 1fr 25rem;
   padding: 2rem; }
+  .footer__contact {
+    display: flex; }
+    .footer__contact a:link, .footer__contact a:visited {
+      text-decoration: none;
+      color: white; }
   .footer__contact-details {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    display: inline-block;
+    height: 6rem;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 600%; }
+    .footer__contact-details p {
+      color: black; }
   .footer__rights {
     text-align: center;
     align-self: center;
@@ -356,4 +369,6 @@ p {
   width: 7rem;
   height: 7rem;
   background-color: #3095d3;
-  float: left; }
+  float: left;
+  text-align: center;
+  line-height: 900%; }
