@@ -229,6 +229,9 @@ p {
     padding-top: 1rem;
     text-align: center;
     padding-bottom: 1rem; }
+    .projects__bubbles .icon-small {
+      height: 3rem;
+      margin-right: 1rem; }
   .projects h2 {
     margin-bottom: 5rem; }
   .projects h4 {
